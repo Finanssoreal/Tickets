@@ -6,49 +6,27 @@ body:
   - type: markdown
     attributes:
       value: |
-        Gracias por reportar un bug. Por favor, proporciona la siguiente información para ayudarnos a diagnosticar y resolver el problema más rápido.
+        Gracias por reportar un error. Por favor, proporciona la siguiente información para ayudarnos a diagnosticar y resolver el problema más rápido.
 
   - type: input
-    id: description
+    id: bug-description
     attributes:
       label: "Descripción del problema"
-      description: "Describe de manera clara y concisa cuál es el error"
-      placeholder: "Escribe aquí la descripción del problema"
+      description: "Describe de manera clara y concisa cuál es el error, puedes indicar cual es el comportamiento esperado y cual es el comportamiento actual."
     validations:
-      required: true
+      required: { required: true }
 
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: "Pasos para reproducirlo"
+      label: "Pasos para reproducir"
       description: "Especifica los pasos necesarios para reproducir el error"
       placeholder: "1. Ve a '...'\n2. Haz clic en '...'\n3. Desplázate hacia '...'\n4. Observa el error"
+      render: markdown
+      value: |
+        1.
+        2.
+        3.
+        4.
     validations:
-      required: true
-
-  - type: input
-    id: expected-behavior
-    attributes:
-      label: "Comportamiento esperado"
-      description: "Explica cuál debería haber sido el resultado esperado"
-      placeholder: "Describe el comportamiento esperado"
-    validations:
-      required: true
-
-  - type: input
-    id: actual-behavior
-    attributes:
-      label: "Comportamiento actual"
-      description: "Describe qué es lo que está ocurriendo realmente"
-      placeholder: "Describe el comportamiento actual"
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional-info
-    attributes:
-      label: "Información adicional"
-      description: "Agrega cualquier otra información que pueda ser útil"
-      placeholder: "Escribe aquí información relevante adicional"
-    validations:
-      required: true
+      required: { required: true }
