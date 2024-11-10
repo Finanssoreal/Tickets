@@ -15,6 +15,7 @@ body:
       label: "Descripción del problema"
       description: "Describe de manera clara y concisa cuál es el error"
       placeholder: "Escribe aquí la descripción del problema"
+    validations:
       required: true
 
   - type: textarea
@@ -23,6 +24,7 @@ body:
       label: "Pasos para reproducirlo"
       description: "Especifica los pasos necesarios para reproducir el error"
       placeholder: "1. Ve a '...'\n2. Haz clic en '...'\n3. Desplázate hacia '...'\n4. Observa el error"
+    validations:
       required: true
 
   - type: input
@@ -31,6 +33,7 @@ body:
       label: "Comportamiento esperado"
       description: "Explica cuál debería haber sido el resultado esperado"
       placeholder: "Describe el comportamiento esperado"
+    validations:
       required: true
 
 
@@ -40,7 +43,8 @@ body:
       label: "Comportamiento actual"
       description: "Describe qué es lo que está ocurriendo realmente"
       placeholder: "Describe el comportamiento actual"
-      required: true
+      validations:
+        required: true
 
   - type: textarea
     id: additional-info
@@ -48,5 +52,5 @@ body:
       label: "Información adicional"
       description: "Agrega cualquier otra información que pueda ser útil"
       placeholder: "Escribe aquí información relevante adicional"
-      required: true
-
+      validations:
+        required: true
