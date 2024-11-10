@@ -1,0 +1,52 @@
+name: "Reporte de Bug"
+description: "Usa esta plantilla para reportar un error en la aplicación"
+title: "[BUG] Descripción breve del problema"
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar un bug. Por favor, proporciona la siguiente información para ayudarnos a diagnosticar y resolver el problema más rápido.
+
+  - type: input
+    id: description
+    attributes:
+      label: "Descripción del problema"
+      description: "Describe de manera clara y concisa cuál es el error"
+      placeholder: "Escribe aquí la descripción del problema"
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Pasos para reproducirlo"
+      description: "Especifica los pasos necesarios para reproducir el error"
+      placeholder: "1. Ve a '...'\n2. Haz clic en '...'\n3. Desplázate hacia '...'\n4. Observa el error"
+      required: true
+
+  - type: input
+    id: expected-behavior
+    attributes:
+      label: "Comportamiento esperado"
+      description: "Explica cuál debería haber sido el resultado esperado"
+      placeholder: "Describe el comportamiento esperado"
+      required: true
+
+
+  - type: input
+    id: actual-behavior
+    attributes:
+      label: "Comportamiento actual"
+      description: "Describe qué es lo que está ocurriendo realmente"
+      placeholder: "Describe el comportamiento actual"
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Información adicional"
+      description: "Agrega cualquier otra información que pueda ser útil"
+      placeholder: "Escribe aquí información relevante adicional"
+      required: true
+
