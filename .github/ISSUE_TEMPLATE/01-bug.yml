@@ -8,7 +8,7 @@ body:
       value: |
         Gracias por reportar un error. Por favor, proporciona la siguiente información para ayudarnos a diagnosticar y resolver el problema más rápido.
 
-  - type: input
+  - type: textarea
     id: bug-description
     attributes:
       label: "Descripción del problema"
