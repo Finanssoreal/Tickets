@@ -14,7 +14,7 @@ body:
       label: "Descripción del problema"
       description: "Describe de manera clara y concisa cuál es el error, puedes indicar cual es el comportamiento esperado y cual es el comportamiento actual."
     validations:
-      required: { required: true }
+      required: true
 
   - type: textarea
     id: steps-to-reproduce
@@ -29,4 +29,4 @@ body:
         3.
         4.
     validations:
-      required: { required: true }
+      required: true
