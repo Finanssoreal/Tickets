@@ -1,0 +1,44 @@
+# Encabezados para la plantilla
+---
+name: "Nueva Característica, Módulo, Función"
+description: "Sugerencia de una nueva funcionalidad en el módulo de compras"
+title: "[Feature]: "
+labels: ["feature"]
+
+# Cuerpo de la estructura YAML
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tu interés en mejorar la aplicación. Por favor, proporciona la siguiente información para ayudarnos a entender y evaluar tu propuesta.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: "Tipo de implementación"
+      description: "Selecciona la opción que corresponda a la nueva implementación."
+      options:
+        - "Mejora de una función existente"
+        - "Implementación de una nueva funcionalidad"
+        # - "Funcionalidad existente"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Descripción de la nueva característica"
+      description: "Descripción clara y concisa de la funcionalidad a implementar o mejorar."
+      placeholder: "Me gustaría que tenga una función de..."
+    validations:
+      required: true
+
+  # Campo de descripción opcional
+  - type: textarea
+    id: solution-ideas
+    attributes:
+      label: "Justificación"
+      description: "Indica y justifica por qué es necesario implementar esta mejora o funcionalidad."
+      placeholder: "Necesito esta funcionalidad ya que me ayuda a resolver x situación."
+    validations:
+      required: true
