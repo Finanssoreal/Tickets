@@ -3,7 +3,7 @@
 name: "Nueva Característica, Módulo, Función"
 description: "Sugerencia de una nueva funcionalidad en el módulo de compras"
 title: "[Feature]: "
-labels: ["feature request"]
+labels: ["feature"]
 
 # Cuerpo de la estructura YAML
 body:
