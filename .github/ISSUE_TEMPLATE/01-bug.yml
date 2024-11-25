@@ -23,10 +23,5 @@ body:
       description: "Especifica los pasos necesarios para reproducir el error"
       placeholder: "1. Ve a '...'\n2. Haz clic en '...'\n3. Desplázate hacia '...'\n4. Observa el error"
       render: markdown
-      value: |
-        1.
-        2.
-        3.
-        4.
     validations:
       required: true
